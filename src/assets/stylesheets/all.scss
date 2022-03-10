@@ -1,0 +1,8 @@
+// 載入 function
+@import '~bootstrap/scss/functions';
+
+// 載入 helpers 裡的變數(自定義)
+@import './helpers/variables';
+
+// 載入所有的 bootstrap 相關的 scss
+@import '~bootstrap/scss/bootstrap';

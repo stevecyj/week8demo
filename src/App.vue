@@ -1,30 +1,35 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <FrontNavbar />
+    <router-view />
+    <div class="bg-dark">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between text-white py-4">
+                <p class="mb-0">© 2020 LOGO All Rights Reserved.</p>
+                <ul class="d-flex list-unstyled mb-0 h4">
+                    <li>
+                        <a href="#" class="text-white mx-3"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white mx-3"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-white ms-3"><i class="fab fa-line"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </template>
 
+<script>
+import FrontNavbar from '@/assets/components/FrontNavbar.vue';
+
+export default {
+  components: {
+    FrontNavbar,
+  },
+};
+</script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+@import './assets/stylesheets/all';
 </style>
