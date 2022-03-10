@@ -20,7 +20,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse bg-white custom-header-md-open" id="navbarNav">
+        <div id="navbarNav" class="collapse navbar-collapse bg-white custom-header-md-open">
           <ul class="navbar-nav">
             <li class="nav-item active">
               <router-link class="nav-link" to="/products">產品頁面</router-link>

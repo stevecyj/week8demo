@@ -13,10 +13,10 @@
                 </h5>
                 <div class="input-group mb-0 mt-4">
                     <label for="heroHeader"> </label>
-                    <input type="text" id="heroHeader" class="form-control rounded-0"
+                    <input id="heroHeader" type="text" class="form-control rounded-0"
                         placeholder="" />
                     <div class="input-group-append">
-                        <button class="btn btn-dark rounded-0" type="button" id="search">Lorem
+                        <button id="search" class="btn btn-dark rounded-0" type="button">Lorem
                             ipsum</button>
                     </div>
                 </div>
