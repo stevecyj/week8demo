@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import FrontNavbar from '@/assets/components/FrontNavbar.vue';
+import FrontNavbar from '@/components/Navbar/FrontNavbar.vue';
 
 export default {
   components: {
