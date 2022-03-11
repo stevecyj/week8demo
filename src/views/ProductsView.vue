@@ -40,7 +40,9 @@ export default {
                     </a>
                     <div class="card-body p-0">
                         <h4 class="mb-0 mt-3"><a href="#">{{ product.title }}</a></h4>
-                        <p class="card-text text-muted mb-0">{{ product.description }}</p>
+                        <p class="card-text text-muted mb-0"
+                            style="height: 4.5rem; overflow: hidden;">
+                            {{ product.description }}</p>
                         <p class="text-muted mt-3">NT$ {{ product.price }}</p>
                     </div>
                 </div>
