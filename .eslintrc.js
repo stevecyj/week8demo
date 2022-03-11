@@ -10,6 +10,7 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'template-curly-spacing': ['error', 'never'],
     'vuejs-accessibility/anchor-has-content': 'off',
     'vuejs-accessibility/label-has-for': 'off',
     'max-len': ['error', { code: 200 }],
@@ -19,7 +20,7 @@ module.exports = {
         code: 160,
         template: 200,
         tabWidth: 2,
-        comments: 80,
+        comments: 120,
         ignorePattern: '',
         ignoreComments: false,
         ignoreTrailingComments: false,

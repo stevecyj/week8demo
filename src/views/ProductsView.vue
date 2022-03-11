@@ -26,18 +26,22 @@ export default {
 
 <template>
     <div class="container mt-md-5 mt-3 mb-7">
+        <!-- rwd 由外層控制 -->
         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
             <div v-for="product in products" :key="product.id">
                 <div class="card border-0 mb-4 position-relative position-relative">
-                    <img :src="product.imageUrl" class="card-img-top rounded-0" alt="..." />
+                    <!-- 圖片等高，改背景圖 -->
+                    <!-- <img :src="product.imageUrl" class="card-img-top rounded-0" alt="..." /> -->
+                    <div style="height: 250px; background-size: cover; background-position: center center;"
+                        :style="{backgroundImage: `url(${product.imageUrl})`}"></div>
                     <a href="#" class="text-dark">
                         <i class="far fa-heart position-absolute"
                             style="right: 16px; top: 16px"></i>
                     </a>
                     <div class="card-body p-0">
-                        <h4 class="mb-0 mt-3"><a href="#">Lorem ipsum</a></h4>
-                        <p class="card-text text-muted mb-0">Lorem ipsum dolor sit amet</p>
-                        <p class="text-muted mt-3">NT$ 1,200</p>
+                        <h4 class="mb-0 mt-3"><a href="#">{{ product.title }}</a></h4>
+                        <p class="card-text text-muted mb-0">{{ product.description }}</p>
+                        <p class="text-muted mt-3">NT$ {{ product.price }}</p>
                     </div>
                 </div>
             </div>
