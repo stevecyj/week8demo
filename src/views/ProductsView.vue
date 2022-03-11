@@ -39,7 +39,10 @@ export default {
                             style="right: 16px; top: 16px"></i>
                     </a>
                     <div class="card-body p-0">
-                        <h4 class="mb-0 mt-3"><a href="#">{{ product.title }}</a></h4>
+                        <h4 class="mb-0 mt-3">
+                            <router-link :to='`/product/${product.id}`'>{{ product.title }}
+                            </router-link>
+                        </h4>
                         <p class="card-text text-muted mb-0"
                             style="height: 4.5rem; overflow: hidden;">
                             {{ product.description }}</p>
