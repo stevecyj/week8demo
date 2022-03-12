@@ -16,4 +16,5 @@ export const apiGetAllProducts = () => axios.get(`${api}/api/${path}/products/al
 export const apiGetSingleProduct = (id) => axios.get(`${api}/api/${path}/product/${id}`); // 取得單一產品
 
 // 購物車
+export const apiGetCart = () => axios.get(`${api}/api/${path}/cart`); // 取得購物車
 export const apiAddToCart = (data) => axios.post(`${api}/api/${path}/cart`, data); // 加入購物車
