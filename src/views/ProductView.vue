@@ -1,6 +1,6 @@
 <script>
-// eslint-disable-next-line no-unused-vars
 import { apiGetSingleProduct, apiAddToCart } from '@/libs/api';
+import emitter from '@/libs/emitter';
 
 export default {
   data() {
@@ -31,7 +31,8 @@ export default {
 
       apiAddToCart({ data })
         .then((response) => {
-          console.log(response);
+          console.log('addToCart', response);
+          emitter.emit('get-cart');
         })
         .catch((error) => {
           console.log(error);

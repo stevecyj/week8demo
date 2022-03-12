@@ -1,4 +1,6 @@
 <script>
+import emitter from '@/libs/emitter';
+
 import { apiGetCart } from '@/libs/api';
 
 export default {
@@ -21,6 +23,9 @@ export default {
   },
   mounted() {
     this.getCart();
+    emitter.on('get-cart', () => {
+      this.getCart();
+    });
   },
 };
 </script>
