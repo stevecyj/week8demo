@@ -3,4 +3,7 @@
 @import './helpers/variables'; // 載入 helpers 裡的變數(自定義)
 @import './helpers/utilities'; // 載入 helpers 裡的 utilties(自定義)
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+@import './base.scss'; // 載入 base.scss
+
 @import '~bootstrap/scss/bootstrap'; // 載入所有的 bootstrap 相關的 scss
