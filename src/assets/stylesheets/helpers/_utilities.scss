@@ -750,6 +750,16 @@ $utilities: map-merge(
         25: 25%,
         75: 75%,
       ),
+    ),
+    'background-attachment': (
+      property: background-attachment,
+      class: bg-attachment,
+      values: fixed,
+    ),
+    'object-fit': (
+      property: object-fit,
+      class: object-fit,
+      values: cover,
     )
   ),
   $utilities

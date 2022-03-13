@@ -13,7 +13,7 @@ export default {
     getCart() {
       apiGetCart()
         .then((response) => {
-          console.log('getCart', response);
+          // console.log('getCart', response);
           this.cartData = response.data.data;
         })
         .catch((error) => {

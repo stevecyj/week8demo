@@ -1,21 +1,27 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-// import HomeView from '../views/HomeView.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: () => import('../views/HomeView.vue'),
-  },
-  {
-    path: '/products',
-    name: 'products',
-    component: () => import('../views/ProductsView.vue'),
-  },
-  {
-    path: '/product/:id',
-    name: 'product',
-    component: () => import('../views/ProductView.vue'),
+    name: 'FrontView',
+    component: () => import('../views/FrontStage/FrontView.vue'),
+    children: [
+      {
+        path: '/',
+        name: 'Index',
+        component: () => import('../views/FrontStage/IndexView.vue'),
+      },
+      {
+        path: '/products',
+        name: 'products',
+        component: () => import('../views/ProductsView.vue'),
+      },
+      {
+        path: '/product/:id',
+        name: 'product',
+        component: () => import('../views/ProductView.vue'),
+      },
+    ],
   },
 ];
 
