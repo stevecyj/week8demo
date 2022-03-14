@@ -31,55 +31,71 @@ export default {
 </script>
 
 <template>
-  <div class="bg-white sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <nav class="navbar px-0 navbar-expand-lg navbar-light bg-white">
-        <router-link
-          to="/"
-          class="navbar-brand position-absolute"
-          style="left: 50%; transform: translate(-50%, -50%); top: 50%"
-        >Navbar</router-link>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          id="navbarNav"
-          class="collapse navbar-collapse bg-white custom-header-md-open"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <router-link
-                class="nav-link"
-                to="/products"
-              >產品頁面</router-link>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="./detail.html"
-              >Lorem ipsum</a>
-            </li>
-          </ul>
-        </div>
-        <div class="d-flex position-relative btn btn-sm">
-          <!-- <a href="#"><i class="fas fa-heart me-5"></i></a> -->
-          <a href="#"><i class="bi bi-bag"></i><span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
-            >
-              {{ cartData.carts?.length }}
-              <span class="visually-hidden">unread messages</span>
-            </span></a>
-        </div>
-      </nav>
+      <a
+        class="navbar-brand order-lg-first"
+        href="#"
+      >Navbar</a>
+      <button
+        class="navbar-toggler order-lg-last me-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        id="navbarSupportedContent"
+        class="collapse navbar-collapse"
+      >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              aria-current="page"
+              href="#"
+            >Home</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+            >Link</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+            >Link</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          >
+          <button
+            class="btn btn-outline-success"
+            type="submit"
+          >Search</button>
+        </form>
+      </div>
+      <button
+        type="button"
+        class="btn btn-primary me-0 me-md-2 position-relative order-last order-lg-last"
+      >12</button>
     </div>
-  </div>
+  </nav>
 </template>
+
+<style lang="scss" scoped>
+ul {
+  list-style-type: none;
+}
+</style>
