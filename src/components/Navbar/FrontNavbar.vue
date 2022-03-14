@@ -33,12 +33,13 @@ export default {
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
+
       <a
         class="navbar-brand order-lg-first"
         href="#"
       >Navbar</a>
       <button
-        class="navbar-toggler order-lg-last me-0"
+        class="navbar-toggler order-first me-0"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent"
@@ -48,11 +49,15 @@ export default {
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+      <button
+        type="button"
+        class="btn  me-0 me-md-2 position-relative order-lg-last"
+      ><i class="bi bi-cart-plus-fill text-primary fs-4"></i></button>
       <div
         id="navbarSupportedContent"
         class="collapse navbar-collapse"
       >
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
           <li class="nav-item">
             <a
               class="nav-link"
@@ -86,10 +91,6 @@ export default {
           >Search</button>
         </form>
       </div>
-      <button
-        type="button"
-        class="btn btn-primary me-0 me-md-2 position-relative order-last order-lg-last"
-      >12</button>
     </div>
   </nav>
 </template>
