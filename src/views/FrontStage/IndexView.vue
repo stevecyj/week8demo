@@ -3,7 +3,12 @@ export default {
   name: 'FrontView',
   components: {},
   data() {
-    return {};
+    return {
+      header: {
+        imageUrl:
+          'https://images.unsplash.com/photo-1428660386617-8d277e7deaf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
+      },
+    };
   },
   methods: {},
   mounted() {},
@@ -11,6 +16,20 @@ export default {
 </script>
 
 <template>
+  <header
+    class="header bg-p-center bg-s-cover px-4 py-5 d-flex align-items-lg-center justify-content-center"
+    :style="{backgroundImage: `url(${header.imageUrl})`}"
+  >
+    <div class="text-white text-center d-flex vertical-lr">
+      <p class="fs-5">burges堡</p>
+    </div>
+    <div class="text-white text-center">
+      <h1 fw-bold>當個大胃王</h1>
+    </div>
+    <div class="text-white text-center vertical-rl">
+      <p>Delicious</p>
+    </div>
+  </header>
 
   <div class="container">
     <div class="row flex-md-row-reverse flex-column">

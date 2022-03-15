@@ -1,0 +1,14 @@
+.header {
+  min-height: calc(
+    100vh - $navbar-brand-height - $navbar-padding-y - $nav-link-padding-y - $btn-padding-y
+  );
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+  // transform: rotate(90deg);
+}
+
+.vertical-lr {
+  writing-mode: vertical-lr;
+}

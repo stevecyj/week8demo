@@ -17,7 +17,7 @@ module.exports = {
     'vue/max-len': [
       'error',
       {
-        code: 160,
+        code: 200,
         template: 200,
         tabWidth: 2,
         comments: 120,
