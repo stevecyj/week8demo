@@ -6,9 +6,13 @@
 
 .vertical-rl {
   writing-mode: vertical-rl;
-  // transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 .vertical-lr {
   writing-mode: vertical-lr;
+}
+
+p {
+  line-height: 0px;
 }

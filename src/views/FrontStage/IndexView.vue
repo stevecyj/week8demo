@@ -17,17 +17,17 @@ export default {
 
 <template>
   <header
-    class="header bg-p-center bg-s-cover px-4 py-5 d-flex align-items-lg-center justify-content-center"
+    class="header bg-p-center bg-s-cover px-2 py-5 d-flex align-items-center justify-content-between"
     :style="{backgroundImage: `url(${header.imageUrl})`}"
   >
-    <div class="text-white text-center d-flex vertical-lr">
-      <p class="fs-5">burges堡</p>
+    <div class="text-white text-center d-flex justify-content-start vertical-lr">
+      <p class="fs-5 ms-0">burges堡</p>
     </div>
     <div class="text-white text-center">
       <h1 fw-bold>當個大胃王</h1>
     </div>
     <div class="text-white text-center vertical-rl">
-      <p>Delicious</p>
+      <p class="ms-0">Delicious</p>
     </div>
   </header>
 
