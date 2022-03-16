@@ -20,7 +20,7 @@ module.exports = {
         code: 200,
         template: 200,
         tabWidth: 2,
-        comments: 120,
+        comments: 12000,
         ignorePattern: '',
         ignoreComments: false,
         ignoreTrailingComments: false,

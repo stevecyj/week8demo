@@ -16,22 +16,31 @@ export default {
 </script>
 
 <template>
-  <header
-    class="header bg-p-center bg-s-cover px-2 py-5 d-flex align-items-center justify-content-between"
-    :style="{backgroundImage: `url(${header.imageUrl})`}"
-  >
-    <div class="text-white text-center d-flex justify-content-start vertical-lr">
-      <p class="fs-5 ms-0">burges堡</p>
-    </div>
-    <div class="text-white text-center">
-      <h1 fw-bold>當個大胃王</h1>
-    </div>
-    <div class="text-white text-center vertical-rl">
-      <p class="ms-0">Delicious</p>
-    </div>
-  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
 
-  <div class="container">
+        <header
+          class="header bg-p-center bg-s-cover px-2 py-5 d-flex align-items-center justify-content-between"
+          :style="{backgroundImage: `url(${header.imageUrl})`}"
+        >
+          <div class="text-white text-center d-flex justify-content-start vertical-lr">
+            <p class="fs-5 ms-0">burges堡</p>
+          </div>
+          <div class="text-white text-center">
+            <h1 fw-bold>當個大胃王</h1>
+          </div>
+          <div class="text-white text-center vertical-rl">
+            <p class="ms-0">Delicious</p>
+          </div>
+        </header>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- <div class="container">
     <div class="row flex-md-row-reverse flex-column">
       <div class="col-md-6">
         <img
@@ -301,7 +310,7 @@ export default {
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <style lang='scss' scoped>

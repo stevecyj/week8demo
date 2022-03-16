@@ -1,9 +1,9 @@
 <script>
-import FrontNavbar from '@/components/Navbar/FrontNavbar.vue';
+// import FrontNavbar from '@/components/Navbar/FrontNavbar.vue';
 
 export default {
   name: 'FrontView',
-  components: { FrontNavbar },
+  // components: { FrontNavbar },
   data() {
     return {};
   },
@@ -11,10 +11,10 @@ export default {
 </script>
 
 <template>
-  <FrontNavbar></FrontNavbar>
+  <!-- <FrontNavbar></FrontNavbar> -->
   <router-view></router-view>
   <!-- footer -->
-  <div class="bg-dark">
+  <!-- <div class="bg-dark">
     <div class="container">
       <div class="d-flex align-items-center justify-content-between text-white py-4">
         <p class="mb-0">© 2020 LOGO All Rights Reserved.</p>
@@ -40,5 +40,5 @@ export default {
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
