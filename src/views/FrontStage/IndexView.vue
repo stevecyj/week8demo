@@ -16,32 +16,19 @@ export default {
 </script>
 
 <template>
-  <div class="">
-    <div class="row g-0">
-      <div class="col">
-
-        <header
-          class="header bg-p-center bg-s-cover px-0 d-flex align-items-center justify-content-between"
-          :style="{backgroundImage: `url(${header.imageUrl})`}"
-        >
-          <!-- <div class="text-white text-center">
-          </div> -->
-          <p class="fs-5 text-white vertical-lr ms-2 mt-6 align-self-start">burges堡</p>
-          <!-- <div class="text-white text-center">
-          </div> -->
-          <h1 class="fw-bold text-white m-0">當個大胃王</h1>
-          <!-- <div class="text-white text-center d-flex flex-row-reverse">
-
-          </div> -->
-          <h6
-            class="fs-5 text-white vertical-rl align-self-end mb-6"
-            style="margin-right: 0px"
-          >Delicious</h6>
-        </header>
+  <div class="container-fluid vh-100">
+    <header
+      class="header bg-p-center bg-s-cover p-0 border border-white"
+      :style="{backgroundImage: `url(${header.imageUrl})`}"
+    >
+      <div class="row g-0 h-100">
+        <div class="col d-flex justify-content-between ">
+          <p class="fs-5 text-white vertical-lr m-0 align-self-start">burges堡</p>
+          <h1 class="fw-bold text-white m-0 ">當個大胃王</h1>
+          <p class="fs-5 text-white vertical-rl align-self-start m-0">Delicious</p>
+        </div>
       </div>
-
-    </div>
-
+    </header>
   </div>
 
   <!-- <div class="container">

@@ -1,9 +1,9 @@
 <script>
-// import FrontNavbar from '@/components/Navbar/FrontNavbar.vue';
+import FrontNavbar from '@/components/Navbar/FrontNavbar.vue';
 
 export default {
   name: 'FrontView',
-  // components: { FrontNavbar },
+  components: { FrontNavbar },
   data() {
     return {};
   },
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <!-- <FrontNavbar></FrontNavbar> -->
+  <FrontNavbar></FrontNavbar>
   <router-view></router-view>
   <!-- footer -->
   <!-- <div class="bg-dark">
