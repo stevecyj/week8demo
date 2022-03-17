@@ -16,20 +16,30 @@ export default {
 </script>
 
 <template>
-  <div class="container-fluid vh-100">
-    <header
-      class="header bg-p-center bg-s-cover p-0 border border-white"
-      :style="{backgroundImage: `url(${header.imageUrl})`}"
-    >
-      <div class="row g-0 h-100">
-        <div class="col d-flex justify-content-between ">
-          <p class="fs-5 text-white vertical-lr m-0 align-self-start">burges堡</p>
-          <h1 class="fw-bold text-white m-0 ">當個大胃王</h1>
-          <p class="fs-5 text-white vertical-rl align-self-start m-0">Delicious</p>
-        </div>
+  <!-- <div class="container-fluid vh-100">
+  </div> -->
+  <header
+    class="header min-vh-100 position-relative bg-p-center bg-s-cover p-0 border border-white"
+    :style="{backgroundImage: `url(${header.imageUrl})`}"
+  >
+    <div class="row g-0 vh-100">
+      <div class="col d-flex justify-content-between ">
+        <h2 class="position-absolute bottom-50 fw-bold display-1 text-white vertical-lr ms-0">
+          burges堡</h2>
+        <h2
+          class="position-absolute translate-middle display-2 text-white m-0"
+          style="left:60%;top: 25%;"
+        >
+          吃個漢堡寶</h2>
+        <h2
+          class="position-absolute bottom-50 fw-bold display-1 text-white vertical-rl m-0"
+          style="right: 1px;"
+        >
+          Delicious
+        </h2>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
 
   <!-- <div class="container">
     <div class="row flex-md-row-reverse flex-column">

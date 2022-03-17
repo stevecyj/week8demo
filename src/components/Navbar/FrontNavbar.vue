@@ -37,7 +37,7 @@ export default {
         class="navbar-brand order-lg-first"
         href="#"
       >Navbar</a>
-      <button
+      <!-- <button
         class="navbar-toggler order-first me-0"
         type="button"
         data-bs-toggle="collapse"
@@ -47,11 +47,25 @@ export default {
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
+      </button> -->
+
+      <button
+        class="navbar-toggler order-first me-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
       </button>
+
       <button
         type="button"
         class="btn  me-0 me-md-2 position-relative order-lg-last"
       ><i class="bi bi-cart-plus-fill text-primary fs-4"></i></button>
+
       <div
         id="navbarSupportedContent"
         class="collapse navbar-collapse"
@@ -77,6 +91,7 @@ export default {
             >Link</a>
           </li>
         </ul>
+
         <!-- <form class="d-flex">
           <input
             class="form-control me-2"
@@ -92,6 +107,53 @@ export default {
       </div>
     </div>
   </nav>
+
+  <div
+    id="offcanvasExample"
+    class="offcanvas offcanvas-start"
+    tabindex="-1"
+    aria-labelledby="offcanvasExampleLabel"
+  >
+    <div class="offcanvas-header">
+      <h5
+        id="offcanvasExampleLabel"
+        class="offcanvas-title"
+      >MENU</h5>
+      <button
+        type="button"
+        class="btn-close text-reset"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center ">
+        <li
+          class="nav-item mx-3 fs-3 wow flash"
+          data-wow-offset="100"
+          data-wow-iteration="infinite"
+        >
+          <a
+            class="nav-link"
+            aria-current="page"
+            href="#"
+          >Home</a>
+        </li>
+        <li class="nav-item mx-3 fs-3">
+          <a
+            class="nav-link"
+            href="#"
+          >Link</a>
+        </li>
+        <li class="nav-item mx-3 fs-3">
+          <a
+            class="nav-link"
+            href="#"
+          >Link</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
