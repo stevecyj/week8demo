@@ -12,8 +12,6 @@ export default {
         animate__animated: false,
         animate__fadeInUp: false,
         'animate__delay-1s': false,
-        wow: false,
-        fadeInUp: false,
       },
       offcanvas: '',
     };
@@ -31,9 +29,6 @@ export default {
     },
     toggleAnimation() {
       // console.log('toggleAnimation');
-      // this.animationClass.animate__animated = !this.animationClass.animate__animated;
-      // this.animationClass.animate__fadeInUp = !this.animationClass.animate__fadeInUp;
-      // this.animationClass['animate__delay-0.5s'] = !this.animationClass['animate__delay-0.5s'];
       this.openOffcanvas();
     },
 
@@ -42,14 +37,10 @@ export default {
       this.animationClass.animate__animated = !this.animationClass.animate__animated;
       this.animationClass.animate__fadeInUp = !this.animationClass.animate__fadeInUp;
       this.animationClass['animate__delay-0.5s'] = !this.animationClass['animate__delay-0.5s'];
-      // this.animationClass.wow = true;
-      // this.animationClass.fadeInUp = true;
     },
 
     hideOffcanvas() {
       this.offcanvas.hide();
-
-      // this.animationClass.wow = true;
     },
   },
   mounted() {
@@ -65,8 +56,6 @@ export default {
 
     this.$refs.offcanvas.addEventListener('hide.bs.offcanvas', () => {
       console.log('hide.bs.offcanvas');
-      // this.animationClass.wow = false;
-      // this.animationClass.fadeInUp = false;
       this.animationClass.animate__animated = !this.animationClass.animate__animated;
       this.animationClass.animate__fadeInUp = !this.animationClass.animate__fadeInUp;
       this.animationClass['animate__delay-0.5s'] = !this.animationClass['animate__delay-0.5s'];
@@ -164,6 +153,8 @@ export default {
         id="offcanvasExampleLabel"
         class="offcanvas-title  animate__animated animate__bounce"
       >MENU</h5>
+
+      <!-- button close offcanvas -->
       <button
         type="button"
         class="btn-close text-reset"
@@ -183,13 +174,19 @@ export default {
             href="#"
           >Home</a>
         </li>
-        <li class="nav-item mx-3 fs-3">
+        <li
+          class="nav-item mx-3 fs-3"
+          :class="animationClass"
+        >
           <a
             class="nav-link"
             href="#"
           >Link</a>
         </li>
-        <li class="nav-item mx-3 fs-3">
+        <li
+          class="nav-item mx-3 fs-3"
+          :class="animationClass"
+        >
           <a
             class="nav-link"
             href="#"
