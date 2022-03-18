@@ -9,9 +9,9 @@ export default {
     return {
       cartData: { carts: [] },
       animationClass: {
-        // animate__animated: false,
-        // animate__fadeInUp: false,
-        // 'animate__delay-0.5s': false,
+        animate__animated: false,
+        animate__fadeInUp: false,
+        'animate__delay-1s': false,
         wow: false,
         fadeInUp: false,
       },
@@ -39,12 +39,17 @@ export default {
 
     openOffcanvas() {
       this.offcanvas.show();
-      this.animationClass.wow = true;
-      this.animationClass.fadeInUp = true;
+      this.animationClass.animate__animated = !this.animationClass.animate__animated;
+      this.animationClass.animate__fadeInUp = !this.animationClass.animate__fadeInUp;
+      this.animationClass['animate__delay-0.5s'] = !this.animationClass['animate__delay-0.5s'];
+      // this.animationClass.wow = true;
+      // this.animationClass.fadeInUp = true;
     },
 
     hideOffcanvas() {
       this.offcanvas.hide();
+
+      // this.animationClass.wow = true;
     },
   },
   mounted() {
@@ -62,6 +67,9 @@ export default {
       console.log('hide.bs.offcanvas');
       // this.animationClass.wow = false;
       // this.animationClass.fadeInUp = false;
+      this.animationClass.animate__animated = !this.animationClass.animate__animated;
+      this.animationClass.animate__fadeInUp = !this.animationClass.animate__fadeInUp;
+      this.animationClass['animate__delay-0.5s'] = !this.animationClass['animate__delay-0.5s'];
     });
   },
 };
@@ -154,7 +162,7 @@ export default {
     <div class="offcanvas-header">
       <h5
         id="offcanvasExampleLabel"
-        class="offcanvas-title"
+        class="offcanvas-title  animate__animated animate__bounce"
       >MENU</h5>
       <button
         type="button"
@@ -164,11 +172,9 @@ export default {
       ></button>
     </div>
     <div class="offcanvas-body">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center ">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
         <li
           class="nav-item mx-3 fs-3"
-          data-wow-offset="100"
-          data-wow-iteration="1"
           :class="animationClass"
         >
           <a
