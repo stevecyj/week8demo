@@ -1,5 +1,6 @@
 import 'bootstrap';
 import 'bootstrap-icons/font/bootstrap-icons.css'; // bootstrap icons
+import 'animate.css'; // Animate.css
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import Wow from 'wow.js';

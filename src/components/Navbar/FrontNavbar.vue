@@ -1,5 +1,6 @@
 <script>
 import emitter from '@/libs/emitter';
+import Offcanvas from 'bootstrap/js/dist/offcanvas';
 
 import { apiGetCart } from '@/libs/api';
 
@@ -7,6 +8,14 @@ export default {
   data() {
     return {
       cartData: { carts: [] },
+      animationClass: {
+        // animate__animated: false,
+        // animate__fadeInUp: false,
+        // 'animate__delay-0.5s': false,
+        wow: false,
+        fadeInUp: false,
+      },
+      offcanvas: '',
     };
   },
   methods: {
@@ -20,11 +29,39 @@ export default {
           console.log(error);
         });
     },
+    toggleAnimation() {
+      // console.log('toggleAnimation');
+      // this.animationClass.animate__animated = !this.animationClass.animate__animated;
+      // this.animationClass.animate__fadeInUp = !this.animationClass.animate__fadeInUp;
+      // this.animationClass['animate__delay-0.5s'] = !this.animationClass['animate__delay-0.5s'];
+      this.openOffcanvas();
+    },
+
+    openOffcanvas() {
+      this.offcanvas.show();
+      this.animationClass.wow = true;
+      this.animationClass.fadeInUp = true;
+    },
+
+    hideOffcanvas() {
+      this.offcanvas.hide();
+    },
   },
   mounted() {
     this.getCart();
     emitter.on('get-cart', () => {
       this.getCart();
+    });
+    this.offcanvas = new Offcanvas(this.$refs.offcanvas);
+
+    this.$refs.offcanvas.addEventListener('show.bs.offcanvas', () => {
+      console.log('show.bs.offcanvas');
+    });
+
+    this.$refs.offcanvas.addEventListener('hide.bs.offcanvas', () => {
+      console.log('hide.bs.offcanvas');
+      // this.animationClass.wow = false;
+      // this.animationClass.fadeInUp = false;
     });
   },
 };
@@ -52,11 +89,10 @@ export default {
       <button
         class="navbar-toggler order-first me-0"
         type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasExample"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        @click="openOffcanvas"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -110,6 +146,7 @@ export default {
 
   <div
     id="offcanvasExample"
+    ref="offcanvas"
     class="offcanvas offcanvas-start"
     tabindex="-1"
     aria-labelledby="offcanvasExampleLabel"
@@ -129,9 +166,10 @@ export default {
     <div class="offcanvas-body">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center ">
         <li
-          class="nav-item mx-3 fs-3 wow flash"
+          class="nav-item mx-3 fs-3"
           data-wow-offset="100"
-          data-wow-iteration="infinite"
+          data-wow-iteration="1"
+          :class="animationClass"
         >
           <a
             class="nav-link"
