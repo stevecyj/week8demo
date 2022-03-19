@@ -16,3 +16,19 @@
 p {
   line-height: 0px;
 }
+
+.hero_text_wrapper {
+  &:before {
+    content: 'burgers';
+    writing-mode: vertical-rl;
+    position: absolute;
+    bottom: 50%;
+    left: -36px;
+    margin: 0px;
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+
+    z-index: 99;
+  }
+}

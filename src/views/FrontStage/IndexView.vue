@@ -23,20 +23,20 @@ export default {
     :style="{backgroundImage: `url(${header.imageUrl})`}"
   >
     <div class="row g-0 vh-100">
-      <div class="col d-flex justify-content-between ">
-        <h2 class="position-absolute bottom-50 fw-bold display-1 text-white vertical-lr ms-0">
-          burges堡</h2>
+      <div class="hero_text_wrapper col d-flex justify-content-between ">
+        <!-- <h2 class="align-self-center fw-bold display-7 text-white vertical-lr ms-0">
+          burges堡</h2> -->
         <h2
-          class="position-absolute translate-middle display-2 text-white m-0"
+          class=" position-absolute translate-middle display-2 text-white m-0"
           style="left:60%;top: 25%;"
         >
           吃個漢堡寶</h2>
-        <h2
-          class="position-absolute bottom-50 fw-bold display-1 text-white vertical-rl m-0"
+        <!-- <h2
+          class="position-absolute align-self-center fw-bold display-7 text-white vertical-rl me-0"
           style="right: 1px;"
         >
           Delicious
-        </h2>
+        </h2> -->
       </div>
     </div>
   </header>
