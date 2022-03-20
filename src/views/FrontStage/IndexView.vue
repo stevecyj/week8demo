@@ -19,18 +19,18 @@ export default {
   <!-- <div class="container-fluid vh-100">
   </div> -->
   <header
-    class="header min-vh-100 position-relative bg-p-center bg-s-cover p-0 border border-white"
+    class="overflow-hidden header position-relative bg-p-center bg-s-cover p-0 border border-white"
     :style="{backgroundImage: `url(${header.imageUrl})`}"
   >
-    <div class="row g-0 vh-100">
-      <div class="hero_text_wrapper col d-flex justify-content-between ">
+    <div class="row g-0 h-100">
+      <div class="hero_text_wrapper d-flex justify-content-center col">
         <!-- <h2 class="align-self-center fw-bold display-7 text-white vertical-lr ms-0">
           burges堡</h2> -->
         <h2
-          class=" position-absolute translate-middle display-2 text-white m-0"
-          style="left:60%;top: 25%;"
+          class="position-absolute fdp text-white m-0"
+          style="top: 25%;"
         >
-          吃個漢堡寶</h2>
+          我要來點漢堡寶</h2>
         <!-- <h2
           class="position-absolute align-self-center fw-bold display-7 text-white vertical-rl me-0"
           style="right: 1px;"

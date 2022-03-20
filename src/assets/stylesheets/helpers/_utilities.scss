@@ -225,6 +225,8 @@ $utilities: map-merge(
       class: min-vh,
       values: (
         100: 100vh,
+        60: 60vh,
+        50: 50vh,
       ),
     ),
     // scss-docs-end utils-sizing
@@ -747,6 +749,7 @@ $utilities: map-merge(
         right: right,
         bottom: bottom,
         left: left,
+        123: bottom center,
         25: 25%,
         75: 75%,
       ),

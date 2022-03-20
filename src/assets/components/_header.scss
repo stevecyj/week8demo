@@ -1,7 +1,17 @@
 .header {
-  min-height: calc(
-    100vh - $navbar-brand-height - $navbar-padding-y - $nav-link-padding-y - $btn-padding-y
-  );
+  // min-height: calc(
+  //   100vh - $navbar-brand-height - $navbar-padding-y - $nav-link-padding-y - $btn-padding-y
+  // );
+  // @media (min-width: 576px) {
+  //   min-height: 100px;
+  // }
+  min-height: 70vh;
+}
+
+.fdp {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .vertical-rl {
@@ -20,15 +30,38 @@ p {
 .hero_text_wrapper {
   &:before {
     content: 'burgers';
+    display: block;
     writing-mode: vertical-rl;
     position: absolute;
-    bottom: 50%;
-    left: -36px;
+    top: 40%;
+    left: -18px;
     margin: 0px;
     color: white;
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: bold;
-
     z-index: 99;
+    @media (min-width: 576px) {
+      font-size: 4rem;
+      left: -24px;
+    }
+  }
+
+  &:after {
+    content: 'delicious';
+    display: block;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 40%;
+    right: -18px;
+    margin: 0px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 99;
+    @media (min-width: 576px) {
+      font-size: 4rem;
+      right: -24px;
+    }
   }
 }
