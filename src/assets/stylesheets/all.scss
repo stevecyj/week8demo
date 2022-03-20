@@ -4,6 +4,7 @@
 @import './helpers/utilities'; // 載入 helpers 裡的 utilties(自定義)
 
 // components
+@import '../components/front-navbar'; // 載入 front-navbar
 @import '../components/header'; // 載入 header
 @import '../components/index-section'; // 載入 index section
 

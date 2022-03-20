@@ -84,14 +84,14 @@ export default {
       </button> -->
 
       <button
-        class="navbar-toggler order-first me-0"
+        class="navbar-toggler custom-toggler order-first me-0"
         type="button"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
         @click="openOffcanvas"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon text-info"></span>
       </button>
 
       <button
@@ -103,7 +103,7 @@ export default {
         id="navbarSupportedContent"
         class="collapse navbar-collapse"
       >
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center w-100">
           <li class="nav-item mx-3">
             <a
               class="nav-link"
@@ -165,15 +165,19 @@ export default {
     <div class="offcanvas-body bg-primary">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-start">
         <li
-          class="nav-item fs-3"
+          class="nav-item fs-3 vw-75"
           :class="animationClass"
         >
           <a
             class="nav-link text-white"
             href="#"
-          >Home</a>
-          <hr class="text-white m-0" />
+          >Home
+          </a>
         </li>
+        <hr
+          class="text-white mt-0"
+          :class="animationClass"
+        />
 
         <li
           class="nav-item fs-3"
@@ -183,8 +187,11 @@ export default {
             class="nav-link text-white"
             href="#"
           >Link</a>
-          <hr class="text-white m-0" />
         </li>
+        <hr
+          class="text-white mt-0"
+          :class="animationClass"
+        />
         <li
           class="nav-item fs-3"
           :class="animationClass"
@@ -193,8 +200,11 @@ export default {
             class="nav-link text-white"
             href="#"
           >Link</a>
-          <hr class="text-white m-0" />
         </li>
+        <hr
+          class="text-white mt-0"
+          :class="animationClass"
+        />
       </ul>
     </div>
   </div>
@@ -203,5 +213,10 @@ export default {
 <style lang="scss" scoped>
 ul {
   list-style-type: none;
+}
+
+.navbar-nav hr {
+  height: 1px;
+  width: 80%;
 }
 </style>
