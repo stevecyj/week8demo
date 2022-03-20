@@ -162,35 +162,38 @@ export default {
         aria-label="Close"
       ></button>
     </div>
-    <div class="offcanvas-body">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+    <div class="offcanvas-body bg-primary">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-start">
         <li
-          class="nav-item mx-3 fs-3"
+          class="nav-item fs-3"
           :class="animationClass"
         >
           <a
-            class="nav-link"
-            aria-current="page"
+            class="nav-link text-white"
             href="#"
           >Home</a>
+          <hr class="text-white m-0" />
         </li>
+
         <li
-          class="nav-item mx-3 fs-3"
+          class="nav-item fs-3"
           :class="animationClass"
         >
           <a
-            class="nav-link"
+            class="nav-link text-white"
             href="#"
           >Link</a>
+          <hr class="text-white m-0" />
         </li>
         <li
-          class="nav-item mx-3 fs-3"
+          class="nav-item fs-3"
           :class="animationClass"
         >
           <a
-            class="nav-link"
+            class="nav-link text-white"
             href="#"
           >Link</a>
+          <hr class="text-white m-0" />
         </li>
       </ul>
     </div>
