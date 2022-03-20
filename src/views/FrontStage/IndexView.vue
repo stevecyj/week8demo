@@ -26,11 +26,19 @@ export default {
       <div class="hero_text_wrapper d-flex justify-content-center col">
         <!-- <h2 class="align-self-center fw-bold display-7 text-white vertical-lr ms-0">
           burges堡</h2> -->
-        <h2
-          class="position-absolute fdp text-white m-0"
-          style="top: 25%;"
+        <div
+          class="position-absolute d-flex flex-column justify-content-center align-items-center"
+          style="top: 20%;"
         >
-          我要來點漢堡寶</h2>
+          <h2 class="font-display text-white mx-0 mb-2">
+            我要來點漢堡寶
+          </h2>
+          <router-link
+            class="btn-shop"
+            to="/"
+          ><span>我要<br />來點</span></router-link>
+
+        </div>
         <!-- <h2
           class="position-absolute align-self-center fw-bold display-7 text-white vertical-rl me-0"
           style="right: 1px;"
