@@ -54,6 +54,16 @@ export default {
   </header>
   <index-section></index-section>
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="display-4">打造更好的漢堡寶</h2>
+        <p>自2099年成立第一家餐以來，持續以無微不至的精神，用心服務每一位顧客，為您打造難以忘懷的美味時光。</p>
+        <p>我們對宇宙的企業責任從無間斷。</p>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+  </div>
   <!-- <div class="container">
     <div class="row flex-md-row-reverse flex-column">
       <div class="col-md-6">
