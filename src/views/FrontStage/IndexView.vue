@@ -1,7 +1,11 @@
 <script>
+import IndexSection from '@/components/Frontend/IndexSection.vue';
+
 export default {
   name: 'FrontView',
-  components: {},
+  components: {
+    IndexSection,
+  },
   data() {
     return {
       header: {
@@ -48,6 +52,7 @@ export default {
       </div>
     </div>
   </header>
+  <index-section></index-section>
 
   <!-- <div class="container">
     <div class="row flex-md-row-reverse flex-column">
