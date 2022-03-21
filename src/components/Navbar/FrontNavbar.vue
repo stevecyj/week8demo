@@ -177,7 +177,7 @@ export default {
         />
 
         <li
-          class="nav-item fs-3"
+          class="nav-item fs-3 appear-delay-4"
           :class="animationClass"
         >
           <a
@@ -186,11 +186,11 @@ export default {
           >Link</a>
         </li>
         <hr
-          class="text-white mt-0"
+          class="text-white mt-0 appear-delay-4"
           :class="animationClass"
         />
         <li
-          class="nav-item fs-3"
+          class="nav-item fs-3 appear-delay-5"
           :class="animationClass"
         >
           <a
@@ -199,7 +199,7 @@ export default {
           >Link</a>
         </li>
         <hr
-          class="text-white mt-0"
+          class="text-white mt-0 appear-delay-5"
           :class="animationClass"
         />
       </ul>
