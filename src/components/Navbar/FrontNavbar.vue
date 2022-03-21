@@ -9,9 +9,8 @@ export default {
     return {
       cartData: { carts: [] },
       animationClass: {
-        animate__animated: false,
-        animate__fadeInUp: false,
-        'animate__delay-1s': false,
+        'disappear-animation': true,
+        'appear-animation': false,
       },
       offcanvas: '',
     };
@@ -34,9 +33,8 @@ export default {
 
     openOffcanvas() {
       this.offcanvas.show();
-      this.animationClass.animate__animated = !this.animationClass.animate__animated;
-      this.animationClass.animate__fadeInUp = !this.animationClass.animate__fadeInUp;
-      this.animationClass['animate__delay-0.5s'] = !this.animationClass['animate__delay-0.5s'];
+      this.animationClass['disappear-animation'] = !this.animationClass['disappear-animation'];
+      this.animationClass['appear-animation'] = !this.animationClass['appear-animation'];
     },
 
     hideOffcanvas() {
@@ -56,9 +54,8 @@ export default {
 
     this.$refs.offcanvas.addEventListener('hide.bs.offcanvas', () => {
       console.log('hide.bs.offcanvas');
-      this.animationClass.animate__animated = !this.animationClass.animate__animated;
-      this.animationClass.animate__fadeInUp = !this.animationClass.animate__fadeInUp;
-      this.animationClass['animate__delay-0.5s'] = !this.animationClass['animate__delay-0.5s'];
+      this.animationClass['disappear-animation'] = !this.animationClass['disappear-animation'];
+      this.animationClass['appear-animation'] = !this.animationClass['appear-animation'];
     });
   },
 };
@@ -165,7 +162,7 @@ export default {
     <div class="offcanvas-body bg-primary">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-start">
         <li
-          class="nav-item fs-3 vw-75"
+          class="nav-item fs-3 vw-75 appear-delay-3"
           :class="animationClass"
         >
           <a
@@ -175,7 +172,7 @@ export default {
           </a>
         </li>
         <hr
-          class="text-white mt-0"
+          class="text-white mt-0 appear-delay-3"
           :class="animationClass"
         />
 
