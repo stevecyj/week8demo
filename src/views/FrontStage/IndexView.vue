@@ -63,7 +63,7 @@ export default {
         </p>
         <a
           href="#"
-          class="ms-2 mb-4 btn btn-call-to-shop"
+          class="ms-2 mb-4 btn-burger btn-call-to-shop"
         >shop now</a>
         <img
           src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
