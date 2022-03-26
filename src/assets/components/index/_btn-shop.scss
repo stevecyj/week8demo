@@ -33,6 +33,7 @@
     transition: 0.3s ease all;
   }
 
-  &:focus {
+  &:active {
+    opacity: 0.75;
   }
 }

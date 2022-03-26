@@ -13,9 +13,9 @@ export default {
 <template>
   <section class="overflow-hidden index-section bg-primary">
     <div class="container">
-      <ul class="row row-cols-2 p-4 d-flex justify-content-center align-items-center">
+      <ul class="row row-cols-2 row-cols-md-4 p-4 d-flex justify-content-center align-items-center">
         <li
-          class="col bg-primary text-center display-6 text-white py-3 border-end border-bottom border-1"
+          class="col bg-primary text-center display-6 text-white py-3 border-end border-bottom border-bottom-md-0 border-1 slogan-item-1"
         >
           <span
             class="wow fadeIn"
@@ -25,7 +25,7 @@ export default {
           </span>
         </li>
         <li
-          class="col bg-primary text-center display-6 text-white py-3 border-start border-bottom border-1"
+          class="col bg-primary text-center display-6 text-white py-3 border-start border-bottom border-bottom-md-0 border-end-md border-1 slogan-item-2"
         >
           <span
             class="wow fadeIn"
@@ -36,7 +36,7 @@ export default {
           </span>
         </li>
         <li
-          class="col bg-primary text-center display-6 text-white py-3 border-end border-top border-1"
+          class="col bg-primary text-center display-6 text-white py-3 border-end border-top border-top-md-0 border-start-md border-1 slogan-item-3"
         >
           <span
             class="wow fadeIn"
@@ -46,8 +46,8 @@ export default {
             衛生
           </span>
         </li>
-        <div
-          class="col bg-primary text-center display-6 text-white py-3 border-start border-top border-1"
+        <li
+          class="col bg-primary text-center display-6 text-white py-3 border-start border-top border-top-md-0 border-1 slogan-item-4"
         >
           <span
             class="wow fadeIn"
@@ -56,7 +56,7 @@ export default {
           >
             超值
           </span>
-        </div>
+        </li>
       </ul>
     </div>
   </section>

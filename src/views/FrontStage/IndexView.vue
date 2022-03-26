@@ -54,29 +54,37 @@ export default {
   </header>
   <index-section></index-section>
 
-  <div class="container">
+  <div class="container index-introduce-bg">
     <div class="row">
       <div class="col-md-6 p-2">
-        <h2 class="display-4 fw-bold p-2">我們沒有發明漢堡，我們重新定義漢堡</h2>
+        <h2 class="display-4 fw-bold p-2 text-primary">我們沒有發明漢堡，我們重新定義漢堡</h2>
         <p class="lh-base fs-5 p-2">
           頂級饗宴，品味再升級，嚴選高檔食材帶來極致搭配，講究多一點，美味更絕對！鮮嫩多汁的肉餅配上味道濃香的cheese，再加上新鮮的生菜、蕃茄，一口咬下去，豐富的口感，全心的滿足！
         </p>
         <a
           href="#"
           class="ms-2 mb-4 btn-burger btn-call-to-shop"
-        >shop now</a>
+        >點我</a>
         <img
           src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
           alt=""
           class="img-fluid"
         >
       </div>
-      <div class="col-md-6">
-        <h2 class="display-4">打造更好的漢堡寶</h2>
-        <p class="lh-base">
+      <div class="col-md-6 p-2">
+        <h2 class="display-4 fw-bold p-2 text-primary">打造更好的漢堡寶</h2>
+        <p class="lh-base fs-5 p-2">
           自2099年成立第一家餐以來，持續以無微不至的精神，用心服務每一位顧客，為您打造難以忘懷的美味時光。我們對宇宙的美食責任從無間斷。投入在人才培育、食品安全、在地關懷與環境保護等領域。
         </p>
-
+        <a
+          href="#"
+          class="ms-2 mb-4 btn-burger btn-call-to-shop"
+        >點我</a>
+        <img
+          src="https://images.unsplash.com/photo-1633636493639-b914de9cb56d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt=""
+          class="img-fluid"
+        >
       </div>
 
     </div>
