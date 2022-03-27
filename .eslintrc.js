@@ -13,12 +13,12 @@ module.exports = {
     'template-curly-spacing': ['error', 'never'],
     'vuejs-accessibility/anchor-has-content': 'off',
     'vuejs-accessibility/label-has-for': 'off',
-    'max-len': ['error', { code: 200 }],
+    'max-len': ['error', { code: 300 }],
     'vue/max-len': [
       'error',
       {
-        code: 200,
-        template: 200,
+        code: 300,
+        template: 300,
         tabWidth: 2,
         comments: 12000,
         ignorePattern: '',
