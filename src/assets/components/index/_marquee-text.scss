@@ -1,0 +1,13 @@
+.marquee-text {
+  overflow: marquee;
+  animation: marquee 10s linear alternate infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}

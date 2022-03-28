@@ -99,6 +99,21 @@ export default {
       <li class="text-center text-white-50">我們為您提供迅速方便的訂餐服務</li>
     </ul>
   </div>
+
+  <div class="container-fluid marquee-text">
+    <div
+      class="row"
+      style="white-space: nowrap;"
+    >
+      BURGERBABY · BURGERBABY ·
+      BURGERBABY ·
+      BURGERBABY ·
+      BURGERBABY ·
+      BURGERBABY · BURGERBABY · BURGERBABY
+
+    </div>
+  </div>
+
   <!-- <div class="container">
     <div class="row flex-md-row-reverse flex-column">
       <div class="col-md-6">
