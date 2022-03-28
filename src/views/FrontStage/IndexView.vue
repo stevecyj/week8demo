@@ -90,7 +90,15 @@ export default {
     </div>
   </div>
 
-  <div class="container parallax"></div>
+  <div class="container parallax">
+    <ul class="px-0">
+      <li><span class="logo d-block d-inline mx-auto"></span></li>
+      <li class="text-center text-white-50">即刻外送，暖心外送，用美味振奮你</li>
+      <li class="text-center text-white-50">現金付款、線上支付任你選，輕鬆享受美味</li>
+      <li class="text-center text-white-50">和朋友相聚的時候不知道要吃什麼</li>
+      <li class="text-center text-white-50">我們為您提供迅速方便的訂餐服務</li>
+    </ul>
+  </div>
   <!-- <div class="container">
     <div class="row flex-md-row-reverse flex-column">
       <div class="col-md-6">
