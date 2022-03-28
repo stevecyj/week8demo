@@ -93,7 +93,7 @@ export default {
   <div class="container parallax">
     <ul class="px-0">
       <li><span class="logo d-block d-inline mx-auto"></span></li>
-      <li class="text-center text-light">即刻外送，暖心外送，用美味振奮你</li>
+      <li class="text-center text-light">即刻救援，暖心外送，用美味振奮你</li>
       <li class="text-center text-light">現金付款、線上支付任你選，輕鬆享受美味</li>
       <li class="text-center text-light">和朋友相聚的時候不知道要吃什麼</li>
       <li class="text-center text-light">我們為您提供迅速方便的訂餐服務</li>
@@ -102,7 +102,7 @@ export default {
   <div class="container-fluid py-2">
     <div class="row wrap">
       <div class="col text-primary content marquee-text"> BURGERBABY · BURGERBABY · BURGERBABY ·
-        BURGERBABY · BURGERBABY · BURGERBABY · BURGERBABY
+        BURGERBABY · BURGERBABY
       </div>
     </div>
   </div>
