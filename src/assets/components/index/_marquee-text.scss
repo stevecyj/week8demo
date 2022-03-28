@@ -1,3 +1,11 @@
+.wrap {
+  overflow: hidden;
+}
+
+.content {
+  width: 100000px;
+}
+
 .marquee-text {
   overflow: marquee;
   animation: marquee 10s linear alternate infinite;

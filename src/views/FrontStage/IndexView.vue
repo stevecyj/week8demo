@@ -1,10 +1,12 @@
 <script>
 import IndexSection from '@/components/Frontend/IndexSection.vue';
+import MarqueeText from 'vue-marquee-text-component';
 
 export default {
   name: 'FrontView',
   components: {
     IndexSection,
+    MarqueeText,
   },
   data() {
     return {
@@ -99,19 +101,19 @@ export default {
       <li class="text-center text-white-50">我們為您提供迅速方便的訂餐服務</li>
     </ul>
   </div>
-
-  <div class="container-fluid marquee-text">
-    <div
-      class="row"
-      style="white-space: nowrap;"
-    >
-      BURGERBABY · BURGERBABY ·
-      BURGERBABY ·
-      BURGERBABY ·
-      BURGERBABY ·
-      BURGERBABY · BURGERBABY · BURGERBABY
-
+  <marquee-text
+    :repeat="5"
+    :duration="3"
+  >
+    &nbsp;BURGERBABY ·
+  </marquee-text>
+  <div class="container-fluid">
+    <div class="row wrap">
+      <div class="col content marquee-text"> BURGERBABY · BURGERBABY · BURGERBABY · BURGERBABY ·
+        BURGERBABY
+      </div>
     </div>
+
   </div>
 
   <!-- <div class="container">
