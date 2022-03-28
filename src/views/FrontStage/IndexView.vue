@@ -1,12 +1,10 @@
 <script>
 import IndexSection from '@/components/Frontend/IndexSection.vue';
-import MarqueeText from 'vue-marquee-text-component';
 
 export default {
   name: 'FrontView',
   components: {
     IndexSection,
-    MarqueeText,
   },
   data() {
     return {
@@ -95,26 +93,27 @@ export default {
   <div class="container parallax">
     <ul class="px-0">
       <li><span class="logo d-block d-inline mx-auto"></span></li>
-      <li class="text-center text-white-50">即刻外送，暖心外送，用美味振奮你</li>
-      <li class="text-center text-white-50">現金付款、線上支付任你選，輕鬆享受美味</li>
-      <li class="text-center text-white-50">和朋友相聚的時候不知道要吃什麼</li>
-      <li class="text-center text-white-50">我們為您提供迅速方便的訂餐服務</li>
+      <li class="text-center text-light">即刻外送，暖心外送，用美味振奮你</li>
+      <li class="text-center text-light">現金付款、線上支付任你選，輕鬆享受美味</li>
+      <li class="text-center text-light">和朋友相聚的時候不知道要吃什麼</li>
+      <li class="text-center text-light">我們為您提供迅速方便的訂餐服務</li>
     </ul>
   </div>
-  <marquee-text
-    :repeat="5"
-    :duration="3"
-  >
-    &nbsp;BURGERBABY ·
-  </marquee-text>
-  <div class="container-fluid">
+  <div class="container-fluid py-2">
     <div class="row wrap">
-      <div class="col content marquee-text"> BURGERBABY · BURGERBABY · BURGERBABY · BURGERBABY ·
-        BURGERBABY
+      <div class="col text-primary content marquee-text"> BURGERBABY · BURGERBABY · BURGERBABY ·
+        BURGERBABY · BURGERBABY · BURGERBABY · BURGERBABY
       </div>
     </div>
-
   </div>
+
+  <!-- <div class="container-fluid">
+    <div class="row wrap">
+      <div class="col content marquee-text fw-bold"> BURGERBABY · BURGERBABY · BURGERBABY ·
+        BURGERBABY · BURGERBABY · BURGERBABY · BURGERBABY
+      </div>
+    </div>
+  </div> -->
 
   <!-- <div class="container">
     <div class="row flex-md-row-reverse flex-column">
