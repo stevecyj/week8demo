@@ -99,6 +99,7 @@ export default {
       <li class="text-center text-light">我們為您提供迅速方便的訂餐服務</li>
     </ul>
   </div>
+  <!-- marquee -->
   <div class="container-fluid py-2">
     <div class="row wrap">
       <div class="col text-primary content marquee-text"> BURGERBABY · BURGERBABY · BURGERBABY ·
@@ -107,6 +108,86 @@ export default {
     </div>
   </div>
 
+  <!-- section resume -->
+  <div class="container py-2">
+    <div class="row gy-3 justify-content-center flex-md-row-reverse">
+      <div class="col-md-4">
+        <img
+          src="https://images.unsplash.com/photo-1632577237955-f73cb2a054ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=701&q=80"
+          class="w-100 object-fit"
+          height="600"
+          alt=""
+        >
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <div>
+          <h3 class="fw-bold text-center">最簡單的東西，我們也要不簡單</h3>
+          <ul class="p-0">
+            <li
+              class="wow fadeInUp d-flex mb-3"
+              data-wow-duration="1s"
+            >
+              <i class="bi bi-house-fill fs-2 text-primary me-3"></i>
+              <div>
+                <p class="fs-5 fw-bold text-primary lh-base">自已的麵包自已做</p>
+                <p class="lh-base">
+                  麥香乳香交織揉出入魂麵團，中央廚房現場發酵烘焙烤製，久窖彈牙自培老麵，咱ㄟ小麥，本地小麥責任使用。
+                </p>
+              </div>
+            </li>
+            <li
+              class="wow fadeInUp d-flex mb-3"
+              data-wow-duration="1s"
+              data-wow-delay="0.3s"
+            >
+              <i class="
+                  bi bi-key-fill
+                  text-center
+                  d-block
+                  fs-2
+                  text-primary
+                  me-3
+                "></i>
+              <div>
+                <p class="fs-5 fw-bold text-primary lh-base">最純粹的靈魂，牛肉</p>
+                <p class="lh-base">
+                  使用美國 CHOICE
+                  等級牛肉，並於中央廚房現場絞製的老饕系列，食材若因產區天候、牲畜狀況、國際貿易或供應商供貨等因素，導致短缺暫時無法使用時，將誠實告知，並提供替代品。
+                </p>
+              </div>
+            </li>
+            <li
+              class="wow fadeInUp d-flex mb-3"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+            >
+              <i class="bi bi-balloon-heart-fill d-block fs-2 text-primary me-3"></i>
+              <div>
+                <p class="fs-5 fw-bold text-primary lh-base">真誠的食物，帶來正港的幸福</p>
+                <p class="lh-base">
+                  從不使用還原果汁，全面使用非籠飼雞蛋，本土高山茶葉使用，提供真誠的美味。
+                </p>
+              </div>
+            </li>
+            <li
+              class="wow fadeInUp d-flex mb-3"
+              data-wow-duration="1s"
+              data-wow-delay="0.9s"
+            >
+              <i class="bi bi-cup-fill text-center d-block fs-2 text-primary me-3"></i>
+              <div>
+                <p class="fs-5 fw-bold text-primary lh-base">堅持新鮮，咖啡是水果</p>
+                <p class="lh-base">
+                  專業杯測，新鮮烘豆，挑豆選豆，多項國際認證，為了一杯好咖啡，我們真的自已來！
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
   <!-- <div class="container-fluid">
     <div class="row wrap">
       <div class="col content marquee-text fw-bold"> BURGERBABY · BURGERBABY · BURGERBABY ·
