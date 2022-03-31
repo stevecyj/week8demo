@@ -7,14 +7,7 @@
 
 // components
 // index
-@import '../components/index/front-navbar'; // 載入 front-navbar
-@import '../components/index/header'; // 載入 header
-@import '../components/index/index-section'; // 載入 index section
-@import '../components/index/btn-shop'; // 載入 btn shop
-@import '../components/index/index-introduce'; // 載入 index introduce
-@import '../components/index/parallax'; // 載入 parallax
-@import '../components/index/logo'; // 載入 logo
-@import '../components/index/marquee-text'; // 載入 marquee text
+@import '../components/index/index-view'; // 載入 index view
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap');
 @import './base.scss'; // 載入 base.scss
