@@ -121,7 +121,7 @@ export default {
       </div>
       <div class="col-md-6 d-flex align-items-center">
         <div>
-          <h3 class="fw-bold text-center mb-4">最簡單的東西，我們也要不簡單</h3>
+          <h3 class="fw-bold text-center py-2">最簡單的東西，我們也要不簡單</h3>
           <ul class="p-0">
             <li
               class="wow fadeInUp d-flex mb-3"

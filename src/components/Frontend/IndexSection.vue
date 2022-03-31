@@ -17,45 +17,44 @@ export default {
         <li
           class="col bg-primary text-center display-6 text-white py-3 border-end border-bottom border-bottom-md-0 border-1 slogan-item-1"
         >
-          <span
-            class="wow fadeIn"
+          <div
+            class=" wow fadeInDown"
             data-wow-duration="2s"
-            data-wow-delay="0.2s"
           >服務
-          </span>
+          </div>
         </li>
         <li
           class="col bg-primary text-center display-6 text-white py-3 border-start border-bottom border-bottom-md-0 border-end-md border-1 slogan-item-2"
         >
-          <span
-            class="wow fadeIn"
+          <div
+            class="wow fadeInDown"
             data-wow-duration="2s"
             data-wow-delay="0.2s"
           >
             品質
-          </span>
+          </div>
         </li>
         <li
           class="col bg-primary text-center display-6 text-white py-3 border-end border-top border-top-md-0 border-start-md border-1 slogan-item-3"
         >
-          <span
-            class="wow fadeIn"
+          <div
+            class="wow fadeInDown"
             data-wow-duration="2s"
-            data-wow-delay="0.2s"
+            data-wow-delay="0.4s"
           >
             衛生
-          </span>
+          </div>
         </li>
         <li
           class="col bg-primary text-center display-6 text-white py-3 border-start border-top border-top-md-0 border-1 slogan-item-4"
         >
-          <span
-            class="wow fadeIn"
+          <div
+            class="wow fadeInDown"
             data-wow-duration="2s"
-            data-wow-delay="0.2s"
+            data-wow-delay="0.6s"
           >
             超值
-          </span>
+          </div>
         </li>
       </ul>
     </div>
